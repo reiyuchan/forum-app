@@ -1,8 +1,8 @@
 package router
 
 import (
-	"mal-forums/controller"
-	"mal-forums/middleware"
+	"github.com/reiyuchan/forum-app/controller"
+	"github.com/reiyuchan/forum-app/middleware"
 
 	"github.com/gin-gonic/gin"
 )

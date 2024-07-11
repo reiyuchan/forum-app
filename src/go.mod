@@ -1,4 +1,4 @@
-module mal-forums
+module github.com/reiyuchan/forum-app
 
 go 1.22.3
 

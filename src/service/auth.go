@@ -1,9 +1,10 @@
 package service
 
 import (
-	"mal-forums/dto"
-	"mal-forums/util/jwt"
 	"net/http"
+
+	"github.com/reiyuchan/forum-app/dto"
+	"github.com/reiyuchan/forum-app/util/jwt"
 
 	"github.com/gin-gonic/gin"
 	"golang.org/x/crypto/bcrypt"

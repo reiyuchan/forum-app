@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"mal-forums/service"
+	"github.com/reiyuchan/forum-app/service"
 
 	"github.com/gin-gonic/gin"
 )

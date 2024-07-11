@@ -1,7 +1,7 @@
 package main
 
 import (
-	"mal-forums/router"
+	"github.com/reiyuchan/forum-app/router"
 
 	"github.com/gin-gonic/gin"
 )

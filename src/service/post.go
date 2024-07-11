@@ -1,11 +1,12 @@
 package service
 
 import (
-	"mal-forums/dto"
-	"mal-forums/util"
-	"mal-forums/util/jwt"
 	"net/http"
 	"time"
+
+	"github.com/reiyuchan/forum-app/dto"
+	"github.com/reiyuchan/forum-app/util"
+	"github.com/reiyuchan/forum-app/util/jwt"
 
 	"github.com/gin-gonic/gin"
 )

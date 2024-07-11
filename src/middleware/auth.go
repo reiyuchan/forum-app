@@ -1,8 +1,9 @@
 package middleware
 
 import (
-	"mal-forums/util/jwt"
 	"net/http"
+
+	"github.com/reiyuchan/forum-app/util/jwt"
 
 	"github.com/gin-gonic/gin"
 )
