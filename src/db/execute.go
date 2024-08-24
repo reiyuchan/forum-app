@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm"
 )
 
-var Current *gorm.DB
+var DB *gorm.DB
 
 const (
 	HOST     = "localhost"
@@ -27,5 +27,5 @@ func execute() {
 		fmt.Println(err.Error())
 		os.Exit(1)
 	}
-	Current = db
+	DB = db
 }

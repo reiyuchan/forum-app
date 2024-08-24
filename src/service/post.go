@@ -89,5 +89,22 @@ func DeletePost(ctx *gin.Context) {
 		}
 	}
 	posts = newPosts
-	ctx.JSON(http.StatusOK, gin.H{"message": "User deleted..", "user": deletedPost})
+	ctx.JSON(http.StatusOK, gin.H{"message": "Post deleted...", "post": deletedPost})
+}
+
+func UpdatePost(ctx *gin.Context) {
+	id := util.StringToUint(ctx.Query("id"))
+	var updatedPost dto.UpdatedPost
+	err := ctx.ShouldBindJSON(updatedPost)
+	if err != nil {
+		ctx.AbortWithStatus(http.StatusBadRequest)
+		return
+	}
+	for i := range len(posts) {
+		if posts[i].ID == id {
+			posts[i].Body = updatedPost.Body
+		}
+
+	}
+	ctx.JSON(http.StatusOK, updatedPost)
 }

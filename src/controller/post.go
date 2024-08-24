@@ -29,3 +29,7 @@ func DeletePosts(ctx *gin.Context) {
 func DeletePost(ctx *gin.Context) {
 	service.DeletePost(ctx)
 }
+
+func UpdatePost(ctx *gin.Context) {
+	service.UpdatePost(ctx)
+}
